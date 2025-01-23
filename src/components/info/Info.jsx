@@ -70,7 +70,7 @@ function Info() {
             <button className="text-white text-[3rem] absolute right-3 mr-3" onClick={nextPicture}><MdNavigateNext /></button>
 
             <div className="absolute flex flex-col top-[30%] ml-[10%] 2xl:top-[35%] 2xl:ml-[12%] font-montserrat">
-                <h1 className="text-white text-[1.5rem] md:text-[2.5rem] font-extrabold">{anime.title}</h1>
+                <h1 className="text-white text-[1.5rem] md:text-[2.5rem] font-extrabold">({anime.title})</h1>
                 <p className="text-white text-[13px] md:text-[17px]">({anime.title_japanese})</p>
                 <p className="text-white text-[13px] md:text-[20px] max-w-[400px] md:max-w-[780px] mt-5">
                 {showMore ? anime.synopsis : `${anime.synopsis?.substring(0, 350)}...`}
